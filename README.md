@@ -75,4 +75,4 @@ Két különböző módon teszi ezt:
   képességek a munkaerőpiacon :) ). A szűrést természetesen akár az adatbázis-lekérdezésnél, akár Java-ban is végezheted.
 Vigyázz, mert a megfelelő megvalósításokhoz különböző konstruktorokkal és az equals metódussal is lesz teendőd!
 
-(A teszteléshez szükséges fájl: resources/db/migration/V1__applicants.sql)
+(A teszteléshez szükséges fájl: src/main/resources/db/migration/V1__applicants.sql)
