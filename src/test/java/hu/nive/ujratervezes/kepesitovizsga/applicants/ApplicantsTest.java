@@ -34,7 +34,6 @@ public class ApplicantsTest {
     public void testListByApplicantsPersonal() {
         generator = new ListByApplicantsPersonal();
         List<Applicant> applicants = generator.getListFromDatabase(dataSource);
-        System.out.println(applicants);
 
         Assertions.assertEquals(1000, applicants.size());
         Assertions.assertEquals("Bolding", applicants.get(12).getLastName());
@@ -48,7 +47,6 @@ public class ApplicantsTest {
     public void testListBySkills() {
         generator = new ListBySkills();
         List<Applicant> applicants = generator.getListFromDatabase(dataSource);
-        System.out.println(applicants);
 
         Assertions.assertEquals(178, applicants.size());
         Assertions.assertEquals("Ashbridge", applicants.get(10).getLastName());
