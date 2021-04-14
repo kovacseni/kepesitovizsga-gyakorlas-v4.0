@@ -50,7 +50,7 @@ public class VaccinationListTest {
     @Test
     public void testValidateTaj() {
         Exception ex = Assertions.assertThrows(IllegalArgumentException.class, () -> list.validateTaj());
-        Assertions.assertEquals("787340842, 190339732, ", ex.getMessage());
+        Assertions.assertEquals("787340842, 190339732", ex.getMessage());
     }
 
     @Test
@@ -60,7 +60,8 @@ public class VaccinationListTest {
 
     @Test
     public void testGetTown() {
-        Assertions.assertEquals("1234, Kukutyin", list.getTown().toString());
+        Assertions.assertEquals("1234", list.getTown().getPostalCode());
+        Assertions.assertEquals("Kukutyin", list.getTown().getTownName());
     }
 
     @Test
